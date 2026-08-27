@@ -1,0 +1,34 @@
+{
+  "name": "terminal-kit-lite",
+  "version": "0.1.0",
+  "description": "A lightweight, zero-dependency terminal UI toolkit for Node.js.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "terminal",
+    "terminal-ui",
+    "cli",
+    "cli-ui",
+    "node",
+    "typescript",
+    "terminal-tools"
+  ],
+  "author": "Sumit Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  },
+  "exports": {
+  ".": "./dist/index.js"
+}
+}
